@@ -1,52 +1,219 @@
+
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="cs">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Naše kočky</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-  </head>
-  <body>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-  <nav class="navbar sm:navbar-expand bg-1 fg-2">
-  <div class="container-fluid">
-    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
-      <div class="drawer-header">
-        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
-      </div>
-      <div class="nav-overflow" data-bs-toggle="nav-overflow">
-  <ul class="nav nav-underline">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Kočka1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Kočka2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Kočka3</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Kočka4</a>
-    </li>
-  </ul>
-</div>
-    </dialog>
-  </div>
-</nav>
-<div class="card theme-inverse">
-  <img src="..." class="card-img" alt="...">
-  <div class="card-img-overlay">
-    <h4 class="card-title">Card title</h4>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-  </div>
-</div>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#uvod">Naše kočky</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Otevřít navigaci">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#uvod">Úvod</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kocka1">Kočka 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kocka2">Kočka 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kocka3">Kočka 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galerie">Galerie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="uvod py-5" id="uvod">
+        <div class="container text-center">
+            <p class="popisek">CHOVATELSKÁ STANICE RAGDOLL</p>
+            <h1>Naše kočky</h1>
+
+            <p class="mx-auto">
+                Naše kočky vybíráme s důrazem na zdraví, povahu
+                a soulad s plemenným standardem. Každému jedinci
+                věnujeme individuální péči a dbáme na pravidelné
+                veterinární kontroly a zdravotní testování.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="container py-5" id="kocky">
+            <div class="text-center mb-5">
+                <p class="popisek">NAŠE KOČIČÍ RODINA</p>
+                <h2>Chovní jedinci</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12">
+                    <article class="card kocka" id="kocka1">
+                        <img src="https://placehold.co/600x450/F0E7DD/59483A?text=Kocka+1"
+                            class="card-img-top" alt="První kočka">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Jméno kočky</h3>
+
+                            <p class="text-secondary">Datum narození: doplnit</p>
+
+                            <p>
+                                Klidná a mazlivá kočka, která ráda
+                                tráví čas se svou rodinou.
+                            </p>
+
+                            <h4 class="h6">Zdravotní testy</h4>
+                            <ul class="seznam">
+                                <li>HCM – doplnit výsledek a datum</li>
+                                <li>PKD – doplnit výsledek a datum</li>
+                            </ul>
+
+                            <h4 class="h6">Úspěchy a původ</h4>
+                            <p>Ocenění a rodičovské spojení – doplnit.</p>
+
+                            <a href="documents/rodokmen1.pdf" class="btn btn-outline-dark mt-2">
+                                Rodokmen (PDF)
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="card kocka" id="kocka2">
+                        <img src="https://placehold.co/600x450/E8E4EF/59483A?text=Kocka+2"
+                            class="card-img-top" alt="Druhá kočka">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Jméno kočky</h3>
+
+                            <p class="text-secondary">Datum narození: doplnit</p>
+
+                            <p>
+                                Společenská a hravá kočka se
+                                zvědavou povahou.
+                            </p>
+
+                            <h4 class="h6">Zdravotní testy</h4>
+                            <ul class="seznam">
+                                <li>HCM – doplnit výsledek a datum</li>
+                                <li>PKD – doplnit výsledek a datum</li>
+                            </ul>
+
+                            <h4 class="h6">Úspěchy a původ</h4>
+                            <p>Ocenění a rodičovské spojení – doplnit.</p>
+
+                            <a href="documents/rodokmen2.pdf" class="btn btn-outline-dark mt-2">
+                                Rodokmen (PDF)
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="card kocka" id="kocka3">
+                        <img src="https://placehold.co/600x450/E4EADF/59483A?text=Kocour+3"
+                            class="card-img-top" alt="Třetí kočka">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Jméno kocoura</h3>
+
+                            <p class="text-secondary">Datum narození: doplnit</p>
+
+                            <p>
+                                Přátelský a vyrovnaný kocour,
+                                který rád odpočívá v blízkosti lidí.
+                            </p>
+
+                            <h4 class="h6">Zdravotní testy</h4>
+                            <ul class="seznam">
+                                <li>HCM – doplnit výsledek a datum</li>
+                                <li>PKD – doplnit výsledek a datum</li>
+                            </ul>
+
+                            <h4 class="h6">Úspěchy a původ</h4>
+                            <p>Ocenění a rodičovské spojení – doplnit.</p>
+
+                            <a href="documents/rodokmen3.pdf" class="btn btn-outline-dark mt-2">
+                                Rodokmen (PDF)
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="galerie py-5" id="galerie">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <p class="popisek">KAŽDODENNÍ ŽIVOT</p>
+                    <h2>Galerie</h2>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-6 col-md-4">
+                        <img src="https://placehold.co/500x400/F0E7DD/59483A?text=Foto+1"
+                            class="img-fluid galerie-foto" alt="Fotografie ze života stanice 1">
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <img src="https://placehold.co/500x400/E8E4EF/59483A?text=Foto+2"
+                            class="img-fluid galerie-foto" alt="Fotografie ze života stanice 2">
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <img src="https://placehold.co/500x400/E4EADF/59483A?text=Foto+3"
+                            class="img-fluid galerie-foto" alt="Fotografie ze života stanice 3">
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <img src="https://placehold.co/500x400/E4EADF/59483A?text=Foto+4"
+                            class="img-fluid galerie-foto" alt="Fotografie ze života stanice 4">
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <img src="https://placehold.co/500x400/F0E7DD/59483A?text=Foto+5"
+                            class="img-fluid galerie-foto" alt="Fotografie ze života stanice 5">
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <img src="https://placehold.co/500x400/E8E4EF/59483A?text=Foto+6"
+                            class="img-fluid galerie-foto" alt="Fotografie ze života stanice 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-1">Naše kočky</p>
+            <p class="text-secondary mb-0">
+                Chov s důrazem na zdraví a pohodu.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
