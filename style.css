@@ -112,3 +112,14 @@ footer {
 .kocka .card-body {
     padding: 30px;
 }
+.btn-rodokmen {
+    background-color: #30302e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.btn-rodokmen:hover {
+    background-color: #B89B5E;
+    color: white;
+}
