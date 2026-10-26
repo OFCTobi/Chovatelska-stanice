@@ -12,26 +12,9 @@ body {
     color: #ffffff;
 }
 
-.navbar-brand:hover {
-    color: #eee7de;
-}
-
 .navbar .nav-link {
     color: #ffffff;
     margin-left: 12px;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    color: #c9a889;
-}
-
-.navbar-toggler {
-    border-color: #ffffff;
-}
-
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.35);
 }
 
 .uvod {
@@ -54,17 +37,16 @@ body {
     border-radius: 14px;
     overflow: hidden;
     background-color: #ffffff;
-    box-shadow: 0 3px 15px rgba(50, 40, 30, 0.06);
 }
 
 .kocka .card-img-top {
     width: 100%;
-    height: 240px;
+    height: 350px;
     object-fit: cover;
 }
 
 .kocka .card-body {
-    padding: 24px;
+    padding: 30px;
 }
 
 .kocka .card-title {
@@ -104,14 +86,8 @@ footer {
         padding: 18px;
     }
 }
-.kocka .card-img-top {
-    height: 350px;
-    object-fit: cover;
-}
 
-.kocka .card-body {
-    padding: 30px;
-}
+
 .btn-rodokmen {
     background-color: #30302e;
     color: white;
